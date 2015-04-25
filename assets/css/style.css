@@ -230,7 +230,7 @@ img { max-width: 100%; }
 	border: 0;
 	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
-.navbar.navbar-no-bg { background: rgba(0, 0, 0, 0.6); }
+.navbar.navbar-no-bg { background: none; }
 
 ul.navbar-nav {
 	font-size: 16px;
