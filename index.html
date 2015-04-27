@@ -32,7 +32,25 @@
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
+
+        <!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+          for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+          mixpanel.init("c1fd2b6d9723437ff13c82f5ae55c87a");</script><!-- end Mixpanel -->
+
     </head>
+
+      <script>
+          mixpanel.track("Landing_loaded",{"Page Name": "Landing_loaded"});
+          mixpanel.track_links("#EmpezarAhoraHeader", "clicked Empezar Ahora Header");
+          mixpanel.track_links("#EmpezarAhora2", "clicked EmpezarAhora2");
+          mixpanel.track_links("#EmpezarAhora3", "clicked EmpezarAhora3");
+          mixpanel.track_links("#PrecioBasico", "clicked EmpezarAhoraPrecioBasico");
+          mixpanel.track_links("#PrecioPro", "clicked EmpezarAhoraPrecioPro");
+          mixpanel.track_links("#PrecioEnterprise", "clicked EmpezarAhoraEnterprise");
+          mixpanel.track_links("#EmpezarAhora4", "clicked EmpezarAhora4");
+
+    </script>
+
 
     <body>
 
@@ -81,7 +99,7 @@
                             	</p>
                             </div>
                             <div class="top-big-link wow fadeInUp" style="margin-bottom: 15px;">
-                            	<a class="btn btn-link-1 btn-lg" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
+                            	<a class="btn btn-link-1 btn-lg" id="EmpezarAhoraHeader" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
                             	<!-- <a class="btn btn-link-2 scroll-link" href="#features">Learn more</a> -->
                             </div>
                         </div>
@@ -333,7 +351,7 @@
         </div>
 
         <div class="top-big-link wow fadeInUp" style="margin-bottom: 15px;">
-            <a class="btn btn-link-1 btn-lg" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
+            <a class="btn btn-link-1 btn-lg" id="EmpezarAhora2" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
             <!-- <a class="btn btn-link-2 scroll-link" href="#features">Learn more</a> -->
         </div>
 
@@ -431,7 +449,7 @@
         </div>
 
         <div class="top-big-link wow fadeInUp" style="margin-bottom: 15px;">
-            <a class="btn btn-link-1 btn-lg" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
+            <a class="btn btn-link-1 btn-lg" id="EmpezarAhora3"href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
             <!-- <a class="btn btn-link-2 scroll-link" href="#features">Learn more</a> -->
         </div> <br><br><br>
 
@@ -522,7 +540,7 @@
 		                    	</ul>
 		                    </div>
 		                    <div class="pricing-box-sign-up">
-		                    	<a class="btn btn-link-1" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
+		                    	<a class="btn btn-link-1" id="PrecioBasico" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
 		                    </div>
 	                    </div>
                     </div>
@@ -548,7 +566,7 @@
 		                    	</ul>
 		                    </div>
 		                    <div class="pricing-box-sign-up">
-		                    	<a class="btn btn-link-1" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
+		                    	<a class="btn btn-link-1" id="PrecioPro" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
 		                    </div>
 		                </div>
                     </div>
@@ -569,7 +587,7 @@
 		                    	</ul>
 		                    </div>
 		                    <div class="pricing-box-sign-up">
-		                    	<a class="btn btn-link-1" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
+		                    	<a class="btn btn-link-1" id="PrecioEnterprise" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
 		                    </div>
 		                </div>
                     </div>
@@ -752,7 +770,7 @@
 	        </div>
         </div>
         <div class="top-big-link wow fadeInUp" style="margin-bottom: 15px;">
-            <a class="btn btn-link-1 btn-lg" href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
+            <a class="btn btn-link-1 btn-lg" id="EmpezarAhora4"href="../confirmala/contact_form.html" target="_blank">¡Empieza ahora!</a>
             <!-- <a class="btn btn-link-2 scroll-link" href="#features">Learn more</a> -->
         </div>
 
